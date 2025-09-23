@@ -1,58 +1,58 @@
 {
-	"$schema": "https://biomejs.dev/schemas/2.2.2/schema.json",
-	"vcs": {
-		"enabled": false,
-		"clientKind": "git",
-		"useIgnoreFile": false
-	},
-	"files": {
-		"ignoreUnknown": false
-	},
-	"formatter": {
-		"indentStyle": "tab",
-		"indentWidth": 2,
-		"lineWidth": 80
-	},
-	"linter": {
-		"enabled": true,
-		"rules": {
-			"recommended": true,
-			"style": {
-				"noUnusedTemplateLiteral": "off"
-			},
-			"a11y": {
-				"noSvgWithoutTitle": "off",
-				"useValidAnchor": "off",
-				"noLabelWithoutControl": "off"
-			},
-			"complexity": {
-				"noForEach": "warn"
-			},
-			"suspicious": {
-				"noArrayIndexKey": "info",
-				"noRedeclare": "off"
-			},
-			"correctness": {
-				"noUnusedVariables": "off",
-				"noUnusedImports": "off"
-			}
-		}
-	},
-	"javascript": {
-		"formatter": {
-			"arrowParentheses": "asNeeded",
-			"jsxQuoteStyle": "double",
-			"quoteStyle": "single",
-			"semicolons": "always",
-			"trailingCommas": "es5"
-		}
-	},
-	"assist": {
-		"enabled": true,
-		"actions": {
-			"source": {
-				"organizeImports": "on"
-			}
-		}
-	}
+  "$schema": "https://biomejs.dev/schemas/2.2.2/schema.json",
+  "vcs": {
+    "enabled": false,
+    "clientKind": "git",
+    "useIgnoreFile": false
+  },
+  "files": {
+    "ignoreUnknown": false
+  },
+  "formatter": {
+    "indentStyle": "tab",
+    "indentWidth": 2,
+    "lineWidth": 80
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "style": {
+        "noUnusedTemplateLiteral": "off"
+      },
+      "a11y": {
+        "noSvgWithoutTitle": "off",
+        "useValidAnchor": "off",
+        "noLabelWithoutControl": "off"
+      },
+      "complexity": {
+        "noForEach": "warn"
+      },
+      "suspicious": {
+        "noArrayIndexKey": "info",
+        "noRedeclare": "off"
+      },
+      "correctness": {
+        "noUnusedVariables": "off",
+        "noUnusedImports": "off"
+      }
+    }
+  },
+  "javascript": {
+    "formatter": {
+      "arrowParentheses": "asNeeded",
+      "jsxQuoteStyle": "double",
+      "quoteStyle": "single",
+      "semicolons": "always",
+      "trailingCommas": "es5"
+    }
+  },
+  "assist": {
+    "enabled": true,
+    "actions": {
+      "source": {
+        "organizeImports": "on"
+      }
+    }
+  }
 }

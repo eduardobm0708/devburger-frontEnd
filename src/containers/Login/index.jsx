@@ -1,20 +1,20 @@
+import { yupResolver } from '@hookform/resolvers/yup';
+import { useForm } from 'react-hook-form';
+import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
+import * as yup from 'yup';
 import Logo from '../../assets/Logo-Login.svg';
 import { Button } from '../../components/Button';
-import { set, useForm } from 'react-hook-form';
-import { yupResolver } from '@hookform/resolvers/yup';
-import * as yup from 'yup';
 import { api } from '../../services/api';
-import { toast } from 'react-toastify';
-import { useNavigate } from 'react-router-dom';
 
 import {
 	Container,
 	Form,
 	InputContainer,
 	LeftContainer,
+	Link,
 	RightContainer,
 	Title,
-	Link,
 } from './styles';
 
 export function Login() {
@@ -41,7 +41,9 @@ export function Login() {
 		resolver: yupResolver(schema),
 	});
 	const onSubmit = async data => {
-		const response = await toast.promise(
+		const {
+			data: { token },
+		} = await toast.promise(
 			api.post('/sessions', {
 				email: data.email,
 				password: data.password,
@@ -60,7 +62,7 @@ export function Login() {
 			}
 		);
 
-		console.log(response);
+		localStorage.setItem('@devburger:token', token);
 	};
 	return (
 		<Container>
