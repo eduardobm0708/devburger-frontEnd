@@ -65,8 +65,8 @@ align-items: center;
 `;
 
 export const Title = styled.h2`
-  font-family: "Road Rage", sans-serif;
-  color: #9758a6;
+  font-family: ${props => props.theme.roadRageFont};
+  color: ${props => props.theme.purple};
   text-align: center;
   font-size: 40px;
   font-weight: 400;
@@ -110,7 +110,7 @@ font-family: "Poppins", sans-serif;
   }
 
   p {
-    color: #cf3057;
+    color: #${props => props.theme.darkRed};
     height: 10px;
     font-size: 14px;
     font-weight: 600;

@@ -1,8 +1,8 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
 height: 50px;
-background-color: #5c2669;
+background-color: ${props => props.theme.darkPurple};
 width: 100vw;
 display: flex;
 align-items: center;

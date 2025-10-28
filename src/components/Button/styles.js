@@ -14,7 +14,7 @@ export const ContainerButton = styled.button`
     &:hover {
     border-radius: 5px;
     border: 1px dashed #FFF;
-    background: #6F357C;
+    background: #${props => props.theme.secondDarkPurple};
     }
 
 `;

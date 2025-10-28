@@ -20,7 +20,7 @@ padding-left: 40px;
 `;
 
 export const Title = styled.h2`
-color: #9758a6;
+color: ${props => props.theme.purple};
 font-size: 32px;
 padding-bottom: 12px;
 position: relative;
@@ -36,7 +36,7 @@ margin-top: 20px;
 
   width: 54px;
   height: 4px;
-  background-color: #9758a6;
+  background-color: ${props => props.theme.purple};
   left: calc(50% - 28px);
 }
 `;
@@ -68,5 +68,5 @@ export const CategoryButton = styled(Link)`
     text-decoration: none;
 
     &:hover
-      {background-color: #9758a6;}
+      {background-color: ${props => props.theme.purple};}
 `;

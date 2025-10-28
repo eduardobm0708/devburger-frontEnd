@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { Container, CardImage } from './styles';
 import { CartButton } from '../CartButton';
-import {useCart} from '../../hooks/CartContext';
+import { useCart } from '../../hooks/CartContext';
 
 export function CardProduct({ product }) {
 	const { putProductInCart } = useCart();

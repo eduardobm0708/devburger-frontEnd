@@ -12,6 +12,6 @@ color: #fff;
 
 
 &:hover {
-  background-color: #6f357c;
+  background-color: #${props => props.theme.secondDarkPurple};
 }
 `;

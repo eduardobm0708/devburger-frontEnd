@@ -6,7 +6,7 @@ import { Link as link } from 'react-router-dom';
 export const Container = styled.div`
 width: 100%;
 min-height: 100vh;
-background-color: #f0f0f0;
+background-color: #${props => props.theme.secondWhite};
 
 background: linear-gradient(
   rgba(255, 255, 255, 0.6),
@@ -24,7 +24,7 @@ position: relative;
 
 background-image: url(${BannerHamburguer});
 background-repeat: no-repeat;
-background-color: #1f1f1f;
+background-color: ${props => props.theme.mainBlack};
 background-position: center;
 background-size: cover;
 h1 {
@@ -71,7 +71,7 @@ export const CategoryButton = styled(link)`
   text-decoration: none;
   color: var(--cor-principal);
   background-color: #fff;
-  border-bottom: ${props => (props.$isActiveCategory ? '4px solid #9758a6' : 'none')};
+  border-bottom: ${props => (props.$isActiveCategory ? `4px solid ${props.theme.lightGray}` : 'none')};
 
   /* Sombra sutil para dar profundidade */
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
@@ -102,7 +102,7 @@ export const ButtonVoltar = styled(link)`
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   color: #fff;
-  background-color: var(--cor-principal, #9758a6);
+  background-color: var(--cor-principal, ${props => props.theme.purple});
   border: none;
   border-radius: 6px;
   text-decoration: none;
@@ -111,7 +111,7 @@ export const ButtonVoltar = styled(link)`
   transition: background 0.2s;
 
   &:hover {
-    background-color: #484848ff;
+    background-color: #${props => props.theme.secondBlack}ff;
   }
 
   &:active {

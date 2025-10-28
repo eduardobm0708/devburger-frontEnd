@@ -4,19 +4,20 @@ import BannerHome from '../../assets/banner-home.svg';
 import BackGround from '../../assets/background.svg';
 
 export const Banner = styled.div`
-background: url(${BannerHome});
-background-position: center;
-background-size: cover;
-height: 457px;
+  background: url(${BannerHome});
+  background-position: center;
+  background-size: cover;
+  height: 457px;
+  position: relative;
 
-h1 {
-  font-family: "Road Rage";
-  font-size: 80px;
-  color: #f4f4f4;
-  position: absolute;
-  right: 20%;
-  top: 10%;
-}
+  h1 {
+    font-family: "Road Rage";
+    font-size: 80px;
+    color: ${props => props.theme.white};
+    position: absolute;
+    right: 20%;
+    top: 10%;
+  }
 `;
 
 export const Container = styled.section`

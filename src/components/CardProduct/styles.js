@@ -27,7 +27,7 @@ position: relative;
 
   p {
     font-size: 18px;
-    color: #ff8c05;
+    color: #${props => props.theme.orange};
     line-height: 1.5;
     font-weight: 700;
     margin-top: 40px;
@@ -35,7 +35,7 @@ position: relative;
 
   strong {
     font-size: 22px;
-    color: #363636;
+    color: #${props => props.theme.black};
     font-weight: 800;
     line-height: 20px;
   }

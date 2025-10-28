@@ -65,7 +65,7 @@ align-items: center;
 `;
 
 export const Title = styled.h2`
-  font-family: "Road Rage", sans-serif;
+  font-family: ${props => props.theme.roadRageFont};
   color: #FFF;
   text-align: center;
   font-size: 40px;
@@ -73,11 +73,11 @@ export const Title = styled.h2`
   line-height: 100%; /* 40px */
 
   span {
-  color: #9758A6;
+  color: ${props => props.theme.purple};
   font-size: 40px;
   font-weight: 400;
   line-height: 100%;
-  font-family: "Road Rage", sans-serif;
+  font-family: ${props => props.theme.roadRageFont};
   }
 `;
 
@@ -117,7 +117,7 @@ font-family: "Poppins", sans-serif;
   }
 
   p {
-    color: #cf3057;
+    color: #${props => props.theme.darkRed};
     height: 10px;
     font-size: 14px;
     font-weight: 600;
