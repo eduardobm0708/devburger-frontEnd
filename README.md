@@ -264,6 +264,6 @@ Este projeto está sob a licença **MIT**. Veja o arquivo [LICENSE](LICENSE) par
 
   ### ⭐ Se este projeto te ajudou, considere dar uma estrela!
 
-  Feito com ❤️ por [Eduardo Bruno Marquezini](https://github.com/eduardobm0708)
+  Feito por [Eduardo Bruno Marquezini](https://github.com/eduardobm0708)
 
 </div>
